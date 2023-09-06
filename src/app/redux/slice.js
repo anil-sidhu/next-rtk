@@ -1,19 +1,20 @@
-// import { createSlice,nanoid,createAsyncThunk } from "@reduxjs/toolkit";
-// const initialState={
-//     todo:[]
-// }
-// export const Slice= createSlice({
-//     name:"anil",
-//     initialState,
-//     reducers:{
-//         addToDo:(state,action)=>{
-//           const data= { id:nanoid(),
-//             name:action.name}
-//             state.todo.push(data)
-//         }
-//     },
-// }) 
+const { createSlice,nanoid } = require("@reduxjs/toolkit");
 
+const initialState={
+    users:[]
+}
+const Slice = createSlice({
+    initialState,
+    reducers:{
+        addUser:(state,action)=>{
+            const data={
+                id:nanoid(),
+                name:action.name
+            }
+            state.users.push(data);
+        }
+    }
+});
 
-// export const {addToDo} = Slice.actions;
-// export default Slice.reducer;
+export const {addUser} = Slice.actions;
+export default Slice.reducer;
