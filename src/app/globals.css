@@ -22,3 +22,10 @@
   display: block;
   margin-top: 20px;
 }
+.user-item {
+  background-color: skyblue;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
