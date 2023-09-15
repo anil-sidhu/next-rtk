@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { addUser } from "../redux/slice";
 import { useDispatch } from "react-redux";
+import Link from "next/link";
 
 export default function AddUsers(){
     const [name,setName]=useState("");
@@ -16,5 +17,6 @@ export default function AddUsers(){
          onChange={(e)=>setName(e.target.value)}
           placeholder="Add New User" />
         <button onClick={userDispatch} className="add-user-btn">Add User</button>
+        <Link href="/removeuser" >Remove User</Link>
     </div>)
 }
