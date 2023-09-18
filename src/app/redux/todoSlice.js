@@ -9,6 +9,7 @@ const Slice=createSlice({
     initialState,
     reducers:{
         addTodos:(state,action)=>{
+           
             const data={
                 id:nanoid,
                 name:action.payload

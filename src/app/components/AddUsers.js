@@ -18,5 +18,7 @@ export default function AddUsers(){
           placeholder="Add New User" />
         <button onClick={userDispatch} className="add-user-btn">Add User</button>
         <Link href="/removeuser" >Remove User</Link>
+        <br />
+        <Link href="/todolist">Go to todo page</Link>
     </div>)
 }
