@@ -10,7 +10,7 @@ export default function DisplayUsers(){
         <h3>User List</h3>
         {
             userData.map((item)=>(
-                <div className="user-item">
+                <div  key={item.id}  className="user-item">
                     <span>{item.name}</span>
                     <button onClick={()=>dispatch(removeUser(item.id))}>Remove</button>
                 </div>

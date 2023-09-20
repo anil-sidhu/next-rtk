@@ -15,7 +15,7 @@ export default function Page(){
         <h4>Todo List</h4>
         {
             todoData.length && todoData.map((item)=>(
-                <h6>{item.name}</h6>
+                <h6 key={item.id} >{item.name}</h6>
             ))
         }
         
